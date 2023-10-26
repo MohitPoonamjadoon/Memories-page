@@ -1,146 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-:root {
-    --background-white: #FEFAE0;
-    --primary-colour : #BC6C25;
-    --secondary : #DDA15E;
-    --tertionary:#606C38;
-    --text :#283618 ;
-
-  }
-
+/* Apply styles to the body for background and font */
 body {
-    background: var(--background-white);
-    color: var(--text);
-    margin: 100px;
-}
-
-.photo {
-    max-width: 200px;
-    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
-    border: 5px solid var(--primary-colour);
-    border-radius: 5px;
-}
-
-
-p, label, a {
-    font-family: "Montserrat", "Times New Roman", sans-serif;
-    font-weight: 400;
-}
-
-
-.dates{
+    font-family: Arial, sans-serif;
+    background: url('woman-holding-flowers-at-a-funeral.webp') no-repeat center center fixed;
+    background-size: contain;
+    background-size: 100% 100%;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    font-family: "Abril Fatface", "Times New Roman", sans-serif;
-
-}
-
-.dob, .dod {
-    display: flex;
-    flex: 1;
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid var(--primary-colour);
-    border-radius: 10px;
-    background-color: var(--secondary);
-    color: var(--text);
-    text-align: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
     justify-content: center;
     align-items: center;
-}
-.dob h2, .dob h3, .dod h2, .dod h3 {
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    font-size: 1rem;
 }
 
-.header{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        align-content: center;
-}
-.header img{
-    display: flex;
-    justify-content: center; 
-    
-}
-
-.name{
-    
-    font-family: "Abril Fatface", "Times New Roman", sans-serif;
-    font-size: 1.5rem ;
-}
-.name h1,.name h5,.name h4 {
-    margin: 5px;
-    
-}
-.midle-body{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-}
-.discription {
-  width: 70%;
-}
-.right-description div {
-    flex: 1; 
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid var(--primary-colour); 
+/* Style the form container */
+.container {
+    background: transparent;
     border-radius: 10px;
-    background-color: var(--secondary);
-    color: var(--text);
-    text-align: center;
-    font-family: "Abril Fatface", "Times New Roman", sans-serif;
-    font-weight: 100;
-    font-size:large;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 95%; /* Adjust the width as needed */
+    max-width: 600px; /* Adjust the max-width as needed */
+    opacity: 0.9;
 }
-.right-description h3 , .right-description h4 {
+
+/* Style labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style input and select elements */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Your-Attractive-Font', cursive; /* Replace with your desired font */
+    font-size: 16px;
+}
+
+/* Style radio buttons */
+.gender {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style submit button */
+button {
+    width: 100%;
+    margin-top: 10px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+/* Style labels */
+label {
+    width: 45%; /* Adjust the label width as needed */
+    font-weight: bold;
     margin: 0;
-    padding: 0;
-}
-.right-description h4 {
-    font-family: 'Montserrat';
-    font-weight: 600;
-
 }
 
-.bubble {
-    position: relative;
-    z-index: -1;
-}
-.circle1 {
-    width: 70px;
-    height: 70px;
-    background-color: var(--secondary);
-    border-radius: 50%;
-    position: absolute;
-    top: 100px;
-    left: 0px;
-}
-.circle2 {
-    width: 50px;
-    height: 50px;
-    background-color: var(--tertionary);
-    border-radius: 50%;
-    position: absolute;
-    top: 0px;
-    left: 100px;
+/* Style input elements */
+input, textarea {
+    width: 50%; /* Adjust the input element width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Your-Attractive-Font', cursive; /* Replace with your desired font */
+    font-size: 16px;
 }
 
-.circle3 {
-    width: 100px;
-    height: 100px;
-    background-color:var(--primary-colour);
-    border-radius: 50%;
-    position: absolute;
-    top: 0px;
-    left: 10px;
+/* Style radio buttons and select elements as needed */
+
+/* Style submit button */
+button {
+    width: 100%;
+    margin-top: 10px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+/* Style labels */
+label {
+    width: 45%;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Style input elements and select elements */
+input, textarea, select {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Your-Attractive-Font', cursive;
+    font-size: 16px;
+}
+
+/* Style submit button */
+button {
+    width: 100%;
+    margin-top: 20px; /* Adjust the margin as needed */
+    padding: 15px 20px; /* Adjust the padding to increase the button's thickness */
+    border: none;
+    border-radius: 10px;
+    background-color: #007BFF; /* Change the background color as needed */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 95%; /* Adjust the width as needed */
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin-top: 50px;
+}
+
+/* Adjust the input element width */
+input, textarea, select {
+    width: 70%; /* Adjust the input element width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Your-Attractive-Font', cursive;
+    font-size: 16px;
+}
+#full-name {
+    margin-top: 20px; /* Adjust the margin as needed */
 }
